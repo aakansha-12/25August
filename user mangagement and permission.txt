@@ -1,0 +1,91 @@
+aakanshasaini880@cloudshell:~$ touch data.txt
+aakanshasaini880@cloudshell:~$ ls
+data.txt
+aakanshasaini880@cloudshell:~$ ln -s target source.file
+aakanshasaini880@cloudshell:~$ ls
+data.txt  source.file
+aakanshasaini880@cloudshell:~$ echo "hii" > data.txt 
+aakanshasaini880@cloudshell:~$ cat source.file 
+cat: source.file: No such file or directory
+aakanshasaini880@cloudshell:~$ echo "hello" link
+hello link
+aakanshasaini880@cloudshell:~$ echo "hello" > link
+aakanshasaini880@cloudshell:~$ cat data.txt 
+hiiaakanshasaini880@cloudshell:~$ touch fiae1 fiae2 fiae3 file4 file5 file6
+aakanshasaini880@cloudshell:~$ ls
+data.txt  fiae1  fiae2  fiae3  file4  file5  file6  link  source.file
+aakanshasaini880@cloudshell:~$ rm fiae*
+aakanshasaini880@cloudshell:~$ ls
+data.txt  file4  file5  file6  link  source.file
+aakanshasaini880@cloudshell:~$ sudo useradd -m set
+useradd: warning: the home directory /home/set already exists.
+useradd: Not copying any file from skel directory into it.
+aakanshasaini880@cloudshell:~$ sudo passwd set 
+New password: 
+Retype new password: 
+passwd: password updated successfully
+aakanshasaini880@cloudshell:~$ sudo groupadd regex
+aakanshasaini880@cloudshell:~$ grep regex /etc/group/
+grep: /etc/group/: Not a directory
+aakanshasaini880@cloudshell:~$ grep regex /etc/group
+regex:x:1002:
+aakanshasaini880@cloudshell:~$ pwd
+/home/aakanshasaini880
+aakanshasaini880@cloudshell:~$ su - set
+Password: 
+Welcome to Cloud Shell! Type "help" to get started.
+To set your Cloud Platform project in this session use “gcloud config set project [PROJECT_ID]”
+set@cloudshell:~$ ls 
+README-cloudshell.txt
+et@cloudshell:/home/aakanshasaini880$ pwd
+/home/aakanshasaini880
+set@cloudshell:/home/aakanshasaini880$ ls 
+data.txt  file4  file5  file6  link  source.file
+set@cloudshell:/home/aakanshasaini880$ ls -lh
+total 8.0K
+-rw-r--r-- 1 aakanshasaini880 aakanshasaini880 4 Sep  3 15:59 data.txt
+-rw-r--r-- 1 aakanshasaini880 aakanshasaini880 0 Sep  3 16:00 file4
+-rw-r--r-- 1 aakanshasaini880 aakanshasaini880 0 Sep  3 16:00 file5
+-rw-r--r-- 1 aakanshasaini880 aakanshasaini880 0 Sep  3 16:00 file6
+-rw-r--r-- 1 aakanshasaini880 aakanshasaini880 6 Sep  3 15:59 link
+lrwxrwxrwx 1 aakanshasaini880 aakanshasaini880 6 Sep  3 15:58 source.file -> target
+set@cloudshell:/home/aakanshasaini880$ cat data.txt 
+hii
+set@cloudshell:/home/aakanshasaini880$ ls -lh
+total 8.0K
+-rw-r--r-- 1 aakanshasaini880 aakanshasaini880 4 Sep  3 15:59 data.txt
+-rw-r--r-- 1 aakanshasaini880 aakanshasaini880 0 Sep  3 16:00 file4
+-rw-r--r-- 1 aakanshasaini880 aakanshasaini880 0 Sep  3 16:00 file5
+-rw-r--r-- 1 aakanshasaini880 aakanshasaini880 0 Sep  3 16:00 file6
+-rw-r--r-- 1 aakanshasaini880 aakanshasaini880 6 Sep  3 15:59 link
+lrwxrwxrwx 1 aakanshasaini880 aakanshasaini880 6 Sep  3 15:58 source.file -> target
+set@cloudshell:/home/aakanshasaini880$ vi data.txt 
+set@cloudshell:/home/aakanshasaini880$ pwd
+/home/aakanshasaini880
+set@cloudshell:/home/aakanshasaini880$ ls 
+data.txt  file4  file5  file6  link  source.file
+set@cloudshell:/home/aakanshasaini880$ exit
+logout
+aakanshasaini880@cloudshell:~$ ls -lh
+total 8.0K
+-rw-r--r-- 1 aakanshasaini880 aakanshasaini880 4 Sep  3 15:59 data.txt
+-rw-r--r-- 1 aakanshasaini880 aakanshasaini880 0 Sep  3 16:00 file4
+-rw-r--r-- 1 aakanshasaini880 aakanshasaini880 0 Sep  3 16:00 file5
+-rw-r--r-- 1 aakanshasaini880 aakanshasaini880 0 Sep  3 16:00 file6
+-rw-r--r-- 1 aakanshasaini880 aakanshasaini880 6 Sep  3 15:59 link
+lrwxrwxrwx 1 aakanshasaini880 aakanshasaini880 6 Sep  3 15:58 source.file -> target
+aakanshasaini880@cloudshell:~$ chmod o+w data.txt 
+aakanshasaini880@cloudshell:~$ ls -lh
+total 8.0K
+-rw-r--rw- 1 aakanshasaini880 aakanshasaini880 4 Sep  3 15:59 data.txt
+-rw-r--r-- 1 aakanshasaini880 aakanshasaini880 0 Sep  3 16:00 file4
+-rw-r--r-- 1 aakanshasaini880 aakanshasaini880 0 Sep  3 16:00 file5
+-rw-r--r-- 1 aakanshasaini880 aakanshasaini880 0 Sep  3 16:00 file6
+-rw-r--r-- 1 aakanshasaini880 aakanshasaini880 6 Sep  3 15:59 link
+lrwxrwxrwx 1 aakanshasaini880 aakanshasaini880 6 Sep  3 15:58 source.file -> target
+aakanshasaini880@cloudshell:~$ ls
+data.txt  file4  file5  file6  link  source.file
+aakanshasaini880@cloudshell:~$ rm data.txt 
+aakanshasaini880@cloudshell:~$ ls
+file4  file5  file6  link  source.file
+aakanshasaini880@cloudshell:~$ 
