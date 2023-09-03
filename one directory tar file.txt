@@ -1,0 +1,35 @@
+aakanshasaini880@cloudshell:~/document$ pwd
+/home/aakanshasaini880/document
+aakanshasaini880@cloudshell:~/document$ ls
+shyam  tushar
+aakanshasaini880@cloudshell:~/document$ mkdir shyam/test
+aakanshasaini880@cloudshell:~/document$ ls shyam/
+test
+aakanshasaini880@cloudshell:~/document$ touch shyam/abc.txt shyam/user.txt
+aakanshasaini880@cloudshell:~/document$ ls shyam/
+abc.txt  test  user.txt
+aakanshasaini880@cloudshell:~/document$ cp shyam/abc.txt  shyam/test/
+aakanshasaini880@cloudshell:~/document$ ls shyam/test/
+abc.txt
+aakanshasaini880@cloudshell:~/document$ mv shyam/user.txt shyam/test/
+aakanshasaini880@cloudshell:~/document$ ls shyam/test/
+abc.txt  user.txt
+aakanshasaini880@cloudshell:~/document$ mkdir tushar/backup
+aakanshasaini880@cloudshell:~/document$ ls tushar/
+backup
+aakanshasaini880@cloudshell:~/document$ touch tushar/def.txt
+aakanshasaini880@cloudshell:~/document$ ls tushar/
+backup  def.txt
+aakanshasaini880@cloudshell:~/document$ tar -cf data.tar tushar/def.txt 
+aakanshasaini880@cloudshell:~/document$ ls
+data.tar  shyam  tushar
+aakanshasaini880@cloudshell:~/document$ tar -xf data.tar -C tushar/backup/
+aakanshasaini880@cloudshell:~/document$ ls tushar/backup/
+tushar
+aakanshasaini880@cloudshell:~/document$ ls tushar/backup/tushar/
+def.txt
+aakanshasaini880@cloudshell:~/document$ 
+
+
+
+
