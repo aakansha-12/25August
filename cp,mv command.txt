@@ -1,0 +1,36 @@
+ pwd
+/home/aakanshasaini880
+aakanshasaini880@cloudshell:~$ ls
+aakanshasaini880@cloudshell:~$ mkdir regex test
+aakanshasaini880@cloudshell:~$ ls
+regex  test
+aakanshasaini880@cloudshell:~$ cd test
+aakanshasaini880@cloudshell:~/test$ touch abc.txt data.txt
+aakanshasaini880@cloudshell:~/test$ ls
+abc.txt  data.txt
+aakanshasaini880@cloudshell:~/test$ ls /home/aakanshasaini880/regex/
+aakanshasaini880@cloudshell:~/test$ ls
+abc.txt  data.txt
+aakanshasaini880@cloudshell:~/test$ ls regex/
+ls: cannot access 'regex/': No such file or directory
+aakanshasaini880@cloudshell:~/test$ cp /home/aakanshasaini880/test/abc.txt /home/aakanshasaini880/regex/
+aakanshasaini880@cloudshell:~/test$ ls regex
+ls: cannot access 'regex': No such file or directory
+aakanshasaini880@cloudshell:~/test$ cd ..
+aakanshasaini880@cloudshell:~$ cd test
+aakanshasaini880@cloudshell:~/test$ mv /home/aakanshasaini880/test/data.txt /home/aakanshasaini880/regex/
+aakanshasaini880@cloudshell:~/test$ ls
+abc.txt
+aakanshasaini880@cloudshell:~/test$ cd ..
+aakanshasaini880@cloudshell:~$ cd regex
+aakanshasaini880@cloudshell:~/regex$ ls
+abc.txt  data.txt
+aakanshasaini880@cloudshell:~/regex$ 
+
+
+
+
+
+
+
+

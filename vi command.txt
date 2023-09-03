@@ -1,0 +1,108 @@
+pwd
+/home/aakanshasaini880
+aakanshasaini880@cloudshell:~$ ls
+aakanshasaini880@cloudshell:~$ touch data.txt
+aakanshasaini880@cloudshell:~$ ls
+data.txt
+aakanshasaini880@cloudshell:~$ vi data.txt 
+aakanshasaini880@cloudshell:~$ cat data.txt `
+> ^C
+aakanshasaini880@cloudshell:~$ cat data.txt 
+hii regexhii regex
+hii reexhii regex
+hii regegxhii regex
+regex
+
+cd regex
+aakanshasaini880@cloudshell:~/regex$ touch file{1..400}
+aakanshasaini880@cloudshell:~/regex$ ls
+file1    file117  file135  file153  file171  file19   file207  file225  file243  file261  file28   file298  file315  file333  file351  file37   file388  file45  file63  file81
+file10   file118  file136  file154  file172  file190  file208  file226  file244  file262  file280  file299  file316  file334  file352  file370  file389  file46  file64  file82
+file100  file119  file137  file155  file173  file191  file209  file227  file245  file263  file281  file3    file317  file335  file353  file371  file39   file47  file65  file83
+file101  file12   file138  file156  file174  file192  file21   file228  file246  file264  file282  file30   file318  file336  file354  file372  file390  file48  file66  file84
+file102  file120  file139  file157  file175  file193  file210  file229  file247  file265  file283  file300  file319  file337  file355  file373  file391  file49  file67  file85
+file103  file121  file14   file158  file176  file194  file211  file23   file248  file266  file284  file301  file32   file338  file356  file374  file392  file5   file68  file86
+file104  file122  file140  file159  file177  file195  file212  file230  file249  file267  file285  file302  file320  file339  file357  file375  file393  file50  file69  file87
+file105  file123  file141  file16   file178  file196  file213  file231  file25   file268  file286  file303  file321  file34   file358  file376  file394  file51  file7   file88
+file106  file124  file142  file160  file179  file197  file214  file232  file250  file269  file287  file304  file322  file340  file359  file377  file395  file52  file70  file89
+file107  file125  file143  file161  file18   file198  file215  file233  file251  file27   file288  file305  file323  file341  file36   file378  file396  file53  file71  file9
+file108  file126  file144  file162  file180  file199  file216  file234  file252  file270  file289  file306  file324  file342  file360  file379  file397  file54  file72  file90
+file109  file127  file145  file163  file181  file2    file217  file235  file253  file271  file29   file307  file325  file343  file361  file38   file398  file55  file73  file91
+file11   file128  file146  file164  file182  file20   file218  file236  file254  file272  file290  file308  file326  file344  file362  file380  file399  file56  file74  file92
+file110  file129  file147  file165  file183  file200  file219  file237  file255  file273  file291  file309  file327  file345  file363  file381  file4    file57  file75  file93
+file111  file13   file148  file166  file184  file201  file22   file238  file256  file274  file292  file31   file328  file346  file364  file382  file40   file58  file76  file94
+file112  file130  file149  file167  file185  file202  file220  file239  file257  file275  file293  file310  file329  file347  file365  file383  file400  file59  file77  file95
+file113  file131  file15   file168  file186  file203  file221  file24   file258  file276  file294  file311  file33   file348  file366  file384  file41   file6   file78  file96
+file114  file132  file150  file169  file187  file204  file222  file240  file259  file277  file295  file312  file330  file349  file367  file385  file42   file60  file79  file97
+file115  file133  file151  file17   file188  file205  file223  file241  file26   file278  file296  file313  file331  file35   file368  file386  file43   file61  file8   file98
+file116  file134  file152  file170  file189  file206  file224  file242  file260  file279  file297  file314  file332  file350  file369  file387  file44   file62  file80  file99
+aakanshasaini880@cloudshell:~/regex$ rm file{1..100}
+aakanshasaini880@cloudshell:~/regex$ ls
+file101  file116  file131  file146  file161  file176  file191  file206  file221  file236  file251  file266  file281  file296  file311  file326  file341  file356  file371  file386
+file102  file117  file132  file147  file162  file177  file192  file207  file222  file237  file252  file267  file282  file297  file312  file327  file342  file357  file372  file387
+file103  file118  file133  file148  file163  file178  file193  file208  file223  file238  file253  file268  file283  file298  file313  file328  file343  file358  file373  file388
+file104  file119  file134  file149  file164  file179  file194  file209  file224  file239  file254  file269  file284  file299  file314  file329  file344  file359  file374  file389
+file105  file120  file135  file150  file165  file180  file195  file210  file225  file240  file255  file270  file285  file300  file315  file330  file345  file360  file375  file390
+file106  file121  file136  file151  file166  file181  file196  file211  file226  file241  file256  file271  file286  file301  file316  file331  file346  file361  file376  file391
+file107  file122  file137  file152  file167  file182  file197  file212  file227  file242  file257  file272  file287  file302  file317  file332  file347  file362  file377  file392
+file108  file123  file138  file153  file168  file183  file198  file213  file228  file243  file258  file273  file288  file303  file318  file333  file348  file363  file378  file393
+file109  file124  file139  file154  file169  file184  file199  file214  file229  file244  file259  file274  file289  file304  file319  file334  file349  file364  file379  file394
+file110  file125  file140  file155  file170  file185  file200  file215  file230  file245  file260  file275  file290  file305  file320  file335  file350  file365  file380  file395
+file111  file126  file141  file156  file171  file186  file201  file216  file231  file246  file261  file276  file291  file306  file321  file336  file351  file366  file381  file396
+file112  file127  file142  file157  file172  file187  file202  file217  file232  file247  file262  file277  file292  file307  file322  file337  file352  file367  file382  file397
+file113  file128  file143  file158  file173  file188  file203  file218  file233  file248  file263  file278  file293  file308  file323  file338  file353  file368  file383  file398
+file114  file129  file144  file159  file174  file189  file204  file219  file234  file249  file264  file279  file294  file309  file324  file339  file354  file369  file384  file399
+file115  file130  file145  file160  file175  file190  file205  file220  file235  file250  file265  file280  file295  file310  file325  file340  file355  file370  file385  file400
+aakanshasaini880@cloudshell:~/regex$ cp /home/aakanshasaini880/regex/file{101..200} /home/aakanshasaini880/backup/
+aakanshasaini880@cloudshell:~/regex$ cd ..
+aakanshasaini880@cloudshell:~$ cd backup/
+aakanshasaini880@cloudshell:~/backup$ ls
+file101  file106  file111  file116  file121  file126  file131  file136  file141  file146  file151  file156  file161  file166  file171  file176  file181  file186  file191  file196
+file102  file107  file112  file117  file122  file127  file132  file137  file142  file147  file152  file157  file162  file167  file172  file177  file182  file187  file192  file197
+file103  file108  file113  file118  file123  file128  file133  file138  file143  file148  file153  file158  file163  file168  file173  file178  file183  file188  file193  file198
+file104  file109  file114  file119  file124  file129  file134  file139  file144  file149  file154  file159  file164  file169  file174  file179  file184  file189  file194  file199
+file105  file110  file115  file120  file125  file130  file135  file140  file145  file150  file155  file160  file165  file170  file175  file180  file185  file190  file195  file200
+aakanshasaini880@cloudshell:~/backup$ cd ..
+aakanshasaini880@cloudshell:~$ cd regex
+aakanshasaini880@cloudshell:~/regex$ rm file{201..210}
+aakanshasaini880@cloudshell:~/regex$ ls
+file101  file115  file129  file143  file157  file171  file185  file199  file223  file237  file251  file265  file279  file293  file307  file321  file335  file349  file363  file377  file391
+file102  file116  file130  file144  file158  file172  file186  file200  file224  file238  file252  file266  file280  file294  file308  file322  file336  file350  file364  file378  file392
+file103  file117  file131  file145  file159  file173  file187  file211  file225  file239  file253  file267  file281  file295  file309  file323  file337  file351  file365  file379  file393
+ file243  file257  file271  file285  file299  file313  file327  file341  file355  file369  file383  file397
+file108  file122  file136  file150  file164  file178  file192  file216  file230  file244  file258  file272  file286  file300  file314  file328  file342  file356  file370  file384  file398
+file109  file123  file137  file151  file165  file179  file193  file217  file231  file245  file259  file273  file287  file301  file315  file329  file343  file357  file371  file385  file399
+file110  file124  file138  file152  file166  file180  file194  file218  file232  file246  file260  file274  file288  file302  file316  file330  file344  file358  file372  file386  file400
+file111  file125  file139  file153  file167  file181  file195  file219  file233  file247  file261  file275  file289  file303  file317  file331  file345  file359  file373  file387
+file112  file126  file140  file154  file168  file182  file196  file220  file234  file248  file262  file276  file290  file304  file318  file332  file346  file360  file374  file388
+file113  file127  file141  file155  file169  file183  file197  file221  file235  file249  file263  file277  file291  file305  file319  file333  file347  file361  file375  file389
+file114  file128  file142  file156  file170  file184  file198  file222  file236  file250  file264  file278  file292  file306  file320  file334  file348  file362  file376  file390
+aakanshasaini880@cloudshell:~/backup$ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
