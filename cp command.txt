@@ -1,0 +1,37 @@
+pwd
+/home/aakanshasaini880
+aakanshasaini880@cloudshell:~$ ls
+aakanshasaini880@cloudshell:~$ mkdir salman sharukh
+aakanshasaini880@cloudshell:~$ ls
+salman  sharukh
+aakanshasaini880@cloudshell:~$ cd salman
+aakanshasaini880@cloudshell:~/salman$ touch dabang4 dabang3
+aakanshasaini880@cloudshell:~/salman$ ls
+dabang3  dabang4
+aakanshasaini880@cloudshell:~/salman$ ls /home/aakanshasaini880/sharukh/
+aakanshasaini880@cloudshell:~/salman$ ls sharukh/
+ls: cannot access 'sharukh/': No such file or directory
+aakanshasaini880@cloudshell:~/salman$ cp /home/aakanshasaini880/s
+salman/  sharukh/ 
+aakanshasaini880@cloudshell:~/salman$ ^C
+aakanshasaini880@cloudshell:~/salman$ cp /home/aakanshasaini880/salman/dabang3 /home/aakanshasaini880/sharukh/dabang3/
+cp: cannot create regular file '/home/aakanshasaini880/sharukh/dabang3/': Not a directory
+aakanshasaini880@cloudshell:~/salman$ cp /home/aakanshasaini880/salman/dabang3 /home/aakanshasaini880/sharukh/
+aakanshasaini880@cloudshell:~/salman$ ls sharukh/
+ls: cannot access 'sharukh/': No such file or directory
+aakanshasaini880@cloudshell:~/salman$ ls
+dabang3  dabang4
+aakanshasaini880@cloudshell:~/salman$ cd sharukh
+-bash: cd: sharukh: No such file or directory
+aakanshasaini880@cloudshell:~/salman$ cd ..
+aakanshasaini880@cloudshell:~$ cd sharukh
+aakanshasaini880@cloudshell:~/sharukh$ ls
+dabang3
+aakanshasaini880@cloudshell:~/sharukh$ cd ..
+aakanshasaini880@cloudshell:~$ cd salman
+aakanshasaini880@cloudshell:~/salman$ mv /home/aakanshasaini880/salman/dabang4 /home/aakanshasaini880/sharukh/
+aakanshasaini880@cloudshell:~/salman$ ls
+dabang3
+aakanshasaini880@cloudshell:~/salman$ ls sharukh
+ls: cannot access 'sharukh': No such file or directory
+aakanshasaini880@cloudshell:~/salman$ ls sharukh/
